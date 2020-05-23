@@ -1,6 +1,6 @@
 # 第二周
 
-[toc]
+[TOC]
 
 ## 无信息搜索(Uninformed Search)
 
@@ -185,7 +185,7 @@
 
   如上图所示，就是Tree Search的结果，会得到相同Node，但出于两个不同分支的结果，返回cost少的那个分支。
 
-  - Graph Search会对该Node进行**松弛操作（Relaxation）**，**比较已经存在于queue中的该Node的cost，与当前到达该Node的cost，哪个小，将小的cost给该Node。**
+  - **Graph Search**会对该Node进行**松弛操作（Relaxation）**，**比较已经存在于queue中的该Node的cost，与当前到达该Node的cost，哪个小，将小的cost给该Node。**
 
 ##### 特性
 
@@ -280,7 +280,7 @@
   4. Goal测试
   5. 路径Cost
 
-- 原则上Graph Search比Tree Search更有效率。
+- 原则上**Graph Search**比**Tree Search**更有效率。
 
   - 因为Graph Search对于已展开的Node不会再次展开，但有一个前提就是**有足够的内存来记忆已经展开过得Node**。
   - 一般来说使用Tree Search，为了提高效率会使用**加了限制条件的记忆体**，譬如只记忆最近看过的100W个State，如果在**展开的过程中遇到了在这100W个state中的Node，则不再展开**，如果**保存的State超过了限制，则将最早放入的State丢弃**
